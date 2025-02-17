@@ -5,7 +5,7 @@ import { env } from './env'
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
   connection:
-    env.DATABASE_CLIENT === 'sqlite' 
+    env.DATABASE_CLIENT === 'pg' 
       ? {
         filename: env.DATABASE_URL,
       }
